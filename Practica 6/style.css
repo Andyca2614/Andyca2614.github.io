@@ -1,0 +1,362 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d14c95;
+    color: #333;
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: #D14C95;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ffe4ec;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Imagenes/header\ barbie.png');
+    background-repeat: no-repeat; 
+    background-size: 1920px;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 140vh;
+    position: relative;
+    padding: 0; 
+}
+
+.hero-section2 {
+    background-image: url('Imagenes/Mesa\ de\ trabajo\ 1.png');
+    background-repeat: no-repeat; 
+    background-size: 1920px; 
+    background-position: center; 
+    color: white;
+    text-align: center;
+    height: 100vh; 
+    position: relative;
+    padding: 0;
+}
+ 
+.hero-content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    z-index: 1;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    background-color: #ffffff;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #D14C95;
+}
+
+.about-text p {
+    margin: 0.5rem 0;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Tickets Section */
+.tickets-section {
+    background-color: #ffe4ec;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.tickets-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #D14C95;
+}
+
+.tickets-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.ticket {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.ticket img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.ticket button {
+    background-color: #D14C95;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ticket button:hover {
+    background-color: #d14c75;
+}
+
+/* Invitados Section */
+.invitados-section {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.invitados-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #D14C95;
+}
+
+.invitados-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.invitados img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: 3px solid #D14C95; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invitados p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #D14C95;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #d14c95;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.columns-section {
+    background-color: #f9f9f9;
+    padding: 2rem 2rem;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite que las columnas se adapten en pantallas más pequeñas */
+}
+
+.column {
+    max-width: 00px; /* Define un ancho máximo para las imágenes */
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+
+
+.card-title {
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+.btn-primary2 {
+    background-color:#e4142a;
+    color: #fff;
+  }
+.boton-productos {
+  background-color:#d14c95;
+  border: #d14c95;
+
+}
+
+.boton-productos:hover {
+  background-color: #fdb2db;
+  color: #fff;
+}
+
+/* Merchandising Section */
+.merchandising-section {
+    background-color: #ffe4ec; /* Fondo rosa suave */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.merchandising-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #D14C95;
+}
+
+.merchandising-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.merch-item {
+    text-align: center;
+    flex: 1;
+}
+
+.merch-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    max-width: 400px; /* Opcional: ajusta el tamaño máximo */
+}
+
+.merch-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.merch-item p strong {
+    font-weight: bold;
+    color: #D14C95;
+}
+
+.merch-item button {
+    background-color: #D14C95;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.merch-item button:hover {
+    background-color: #d14c75;
+}
+
+.social-section {
+    background-color: #d14c95; /* Fondo rosa suave */
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Permite adaptar las columnas en pantallas pequeñas */
+}
+
+.social-item {
+    text-align: center;
+    flex: 1; /* Todas las columnas tienen el mismo ancho */
+    max-width: 150px; /* Tamaño máximo de cada columna */
+}
+
+.social-item img {
+    width: 200px; /* Ajusta el tamaño de los iconos */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.social-item p {
+    font-size: 1rem;
+    color: #D14C95; /* Color del texto */
+    margin: 0;
+    font-weight: bold;
+}
